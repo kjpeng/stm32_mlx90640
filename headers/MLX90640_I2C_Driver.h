@@ -13,12 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
+ * modified to account for stm32 hal and I2C handle
  */
 #ifndef _MLX90640_I2C_Driver_H_
 #define _MLX90640_I2C_Driver_H_
 
 #include <stdint.h>
 #include "MLX90640_API.h"
+#include "stm32g4xx_hal.h"
+
+    extern I2C_HandleTypeDef hi2c2;
 
     extern void MLX90640_I2CInit(void);
     extern int MLX90640_I2CGeneralReset(void);
