@@ -1,7 +1,6 @@
 
 #include "MLX90640_I2C_Driver.h"
 
-
 int MLX90640_I2CRead(uint8_t slaveAddr,uint16_t startAddress, uint16_t nMemAddressRead, uint16_t *data) {
   // HAL_StatusTypeDef HAL_I2C_Mem_Read(
   //   I2C_HandleTypeDef *hi2c,
